@@ -1,0 +1,112 @@
+.app {
+    display: flex;
+    background-color: rgb(91, 91, 91);
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+@mixin rounded {
+    border-radius: 2px;
+}
+
+@mixin card {
+    border: 1px solid black;
+    box-shadow: 1px 1px rgb(47, 47, 47);
+    flex-basis: 50%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+
+    @media all and (max-width: 1024px) {
+        flex-basis: 95%;
+        font-size: 1.25em;
+    }
+}
+
+.form-box {
+    @include rounded;
+    @include card;
+
+    form {
+        @include rounded;
+        display: flex;
+        width: 100%;
+        padding: 1em;
+        background-color: white;
+        flex-flow: column wrap;
+        justify-content: center;
+        height: auto;
+    }
+}
+
+label,
+.input {
+    font-size: 1.2em;
+
+    padding-bottom: 1em;
+    display: block;
+    width: 100%;
+    flex: 1;
+
+
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: auto;
+    box-shadow: inset;
+    @include rounded;
+    border: 1px solid #cccccc;
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 12em;
+}
+
+.button {
+    width: auto;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    background-color: rgb(70, 191, 70);
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #484848;
+    }
+}
+
+.card {
+    @include card;
+    max-width: 500px;
+    @media all and (max-width: 1024px) {
+        max-width: 80%;
+        font-size: 2em;
+    }
+    @media all and (max-width: 768px) {
+        max-width: 70%;
+        font-size: 1.25em;
+        
+    }
+    text-align: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    padding: 0.5em 2em 0.5em 2em;
+    align-items: center;
+    background-color: white;
+    * {
+        flex-basis: 50%;
+        margin: 2em 0.5em;
+    }
+    .container {
+        width: auto;
+        margin: auto
+    }
+}

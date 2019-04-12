@@ -1,0 +1,37 @@
+{
+  "name": "react-dropbox",
+  "version": "0.0.1",
+  "description": "Dropbox pratice implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "react",
+    "personal",
+    "practice"
+  ],
+  "author": "Pontakorn Paesaeng",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-react-app": "^7.0.2",
+    "firebase": "^5.9.3",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass": "^1.18.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0"
+  }
+}
