@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 // import Card from './Card';
 import SubmitForm from './SubmitForm';
 
-import 'normalize.css';
-import '../public/style.scss';
 
 const App = ({ db }) => {
   const [isSent, setSent] = useState(false);

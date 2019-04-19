@@ -77,10 +77,13 @@ textarea {
     border: 1px solid white;
     border-radius: 25px;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
         background-color: #484848;
     }
+    
+    display: block;
 }
 
 .card {
