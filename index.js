@@ -15,9 +15,9 @@ import './public/style.scss';
 const App = () => (
   <Router>
     <div className="app">
-      <Route path="/" exact component={Completed} />
-      {/*
+      <Route path="/" exact component={Home} />
       <Route path="/sent" component={Completed} />
+      {/*
       <Route path="/views" exact component={View} />
       */
       }
